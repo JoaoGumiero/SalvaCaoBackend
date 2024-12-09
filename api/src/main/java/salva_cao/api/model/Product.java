@@ -4,14 +4,15 @@ package salva_cao.api.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.security.PrivateKey;
+import java.awt.*;
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.List;
 
 @Entity
-@Table(name = "animals")
+@Table(name = "Product")
 @Data
-public class Animal {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,26 +22,23 @@ public class Animal {
     private String name;
 
     @Column(nullable = false)
-    private String type; // CAT or DOG
+    private String desc;
 
     @Column(nullable = false)
-    private String breed;
+    private Float price;
 
     @Column(nullable = false)
-    private LocalDate rescueDate;
+    private Integer quantity;
 
     @Column(nullable = false)
-    private String healthStatus;
+    private Category category;
 
     @Column(nullable = false)
-    private String imageUrl;
+    private Image image_url;
 
     @Column(nullable = false)
-    private boolean isAdopted;
+    private Date register_date;
 
     @Column(nullable = false)
-    private Date dateCreated;
-
-    @Column(nullable = false)
-    private Date dateUpdated;
+    private Boolean status;
 }

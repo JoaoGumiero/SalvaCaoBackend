@@ -2,11 +2,13 @@ package salva_cao.api.model;
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "Adoption")
+@Data
 public class Adoption {
 
     @Id

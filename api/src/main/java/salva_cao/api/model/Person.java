@@ -2,10 +2,14 @@ package salva_cao.api.model;
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Entity
+@Table(name = "Person")
+@Data
 public class Person {
 
     @Id
@@ -47,4 +51,6 @@ public class Person {
 
     @OneToMany(mappedBy = "adopter")
     private List<Adoption> adoptions;
+
+
 }
