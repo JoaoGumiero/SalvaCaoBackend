@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import salva_cao.api.model.Adoption;
+import salva_cao.api.service.AdoptionService;
 
 @RestController
 @RequestMapping("/salva-cao/adocao")
@@ -35,7 +36,7 @@ public class AdoptionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Adoption> updateAdoption(@PathVariable Long id, @RequestBody Adoption adoption) {
-        return ResponseEntity.ok(adoptionService.updateVolunteer(id, adoption));
+        return ResponseEntity.ok(adoptionService.updateAdoption(id, adoption));
     }
 
     @DeleteMapping("/{id}")

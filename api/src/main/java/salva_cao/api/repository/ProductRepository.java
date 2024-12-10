@@ -6,5 +6,5 @@ import salva_cao.api.model.Person;
 import salva_cao.api.model.Product;
 
 @Repository
-public interface ProductRepository extends CrudRepository<Product, Long> {
+public interface ProductRepository<Product, Long>  extends CrudRepository<Product, Long> {
 }

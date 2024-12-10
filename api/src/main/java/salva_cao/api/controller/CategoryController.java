@@ -3,10 +3,13 @@ package salva_cao.api.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import salva_cao.api.model.Category;
+import salva_cao.api.service.CategoryService;
 
 @RestController
 @RequestMapping("/salva-cao/categorias")
 public class CategoryController {
+
     private final CategoryService categoryService;
 
     public CategoryController(CategoryService categoryService) {

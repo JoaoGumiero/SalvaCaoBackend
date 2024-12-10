@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import salva_cao.api.model.Person;
 
 @Repository
-public interface PersonRepository extends CrudRepository<Person, Long> {
+public interface PersonRepository<Person, Long> extends CrudRepository<Person, Long> {
 
 }

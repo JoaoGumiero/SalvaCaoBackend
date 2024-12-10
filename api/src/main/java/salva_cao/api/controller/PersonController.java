@@ -6,6 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import salva_cao.api.model.Person;
+import salva_cao.api.service.PersonService;
 
 @RestController
 @RequestMapping("/salva-cao/pessoas")
