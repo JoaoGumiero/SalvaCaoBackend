@@ -5,6 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import salva_cao.api.model.Animal;
+import salva_cao.api.service.AnimalService;
 
 
 @RestController

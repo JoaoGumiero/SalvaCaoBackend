@@ -29,4 +29,48 @@ public class Adoption {
     @Column(nullable = false)
     private LocalDate adoptionDate;
 
+    public Adoption() {}
+
+    public Adoption(String name, Animal adopted, Person adopter, LocalDate adoptionDate) {
+        this.name = name;
+        this.adopted = adopted;
+        this.adopter = adopter;
+        this.adoptionDate = adoptionDate;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Animal getAdopted() {
+        return adopted;
+    }
+
+    public void setAdopted(Animal adopted) {
+        this.adopted = adopted;
+    }
+
+    public Person getAdopter() {
+        return adopter;
+    }
+
+    public void setAdopter(Person adopter) {
+        this.adopter = adopter;
+    }
+
+    public LocalDate getAdoptionDate() {
+        return adoptionDate;
+    }
+
+    public void setAdoptionDate(LocalDate adoptionDate) {
+        this.adoptionDate = adoptionDate;
+    }
 }
