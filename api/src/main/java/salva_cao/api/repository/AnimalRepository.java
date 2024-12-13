@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import salva_cao.api.model.Animal;
 
 @Repository
-public interface AnimalRepository<Animal, Long> extends CrudRepository<Animal, Long> {
+public interface AnimalRepository extends CrudRepository<Animal, Long> {
 
 }
